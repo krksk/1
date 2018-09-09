@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>나는 군생활을 몇퍼센트 했을까?</title>
+</head>
+
+<body>
+	<div style="height: 3vw"></div>
+		<div style="margin: auto; width: 350px; padding: 3px 0px" >
+			내 군생활은 얼마나 남았을까...?
+			<br>
+			<br>
+
+	<input type= "text" placeholder="현재 복무일수를 입력할 것." size="20" id="a">일
+	<button id="but">몇퍼했을까~?ㅋㅋ</button>
+	<br>
+	<br>
+	<div id="output" style="width:400px; height: 400px; background:  black; color: red; text-align: center; line-height: 200px; font-weight:bold;" "남은 군생활은 몇퍼센트일까~?"; ></div>
+
+
+
+	<script type="text/javascript">
+
+		but.onclick = function cal(){
+
+			var b = document.getElementById("b");
+			var c = document.getElementById("c");
+			var finalOutput = "당신은" + a.value + "일을 복무하셨고" + b.value + " 하셨네욬ㅋㅋㅋ" + " 앞으로" + c.value + "남았습니다.";
+			b.value = eval(a.value/640*100) + " %"; 
+			c.value = eval(100-(a.value/640*100)) + " %";
+			output.innerHTML = finalOutput;
+
+		}
+	</script>
+	<BODY onload="cal();"> 
+		<input type="text" id=b name=b value="">
+		<input type="text" id=c name=c value="">
+</body>
+</html>
